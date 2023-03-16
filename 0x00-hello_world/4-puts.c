@@ -12,5 +12,5 @@ int main(void)
 
     /* Return 0 to indicate successful completion of the program */
     return (0);
-}
 
+}
