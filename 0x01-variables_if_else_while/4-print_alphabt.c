@@ -7,21 +7,15 @@
 int main(void)
 {
 int ch;
-int aa;
-int bb;
-for (ch = 'a'; ch < 'e' ; ch++)
+
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+if (ch != 'e' && ch != 'q')
 {
 putchar(ch);
 }
-for (aa = 'f'; aa < 'q' ; aa++)
-{
-putchar(aa);
 }
-for (bb = 'r'; bb <= 'z' ; bb++)
-{
-putchar(bb);
-}
+
 putchar('\n');
 return (0);
-
 }
