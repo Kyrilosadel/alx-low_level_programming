@@ -4,18 +4,13 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-char c = 'a';
-
-while (c <= 'z')
+int ch;
+for (ch = 'a'; ch <= 'z' ; ch++)
 {
-putchar(c);
-c++;
+putchar(ch);
 }
+return (0);
 
-putchar('\n');
-
-return 0;
 }
