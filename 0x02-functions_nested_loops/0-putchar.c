@@ -1,15 +1,17 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - Prints all possible combinations of single-digit numbers
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Return:0
  */
+
 int main(void)
 {
-int i;
-
-printf("_putchar\n");
-
+char c[9] = "_putchar";
+for (int i = 0; i < 9; i++)
+{
+putchar(c[i]);
+}
+putchar('\n');
 return (0);
 }
-
