@@ -1,4 +1,4 @@
-nclude "function_pointers"
+#include "function_pointers"
 
 /**
  * array_iterator - maps an array through a func pointer
