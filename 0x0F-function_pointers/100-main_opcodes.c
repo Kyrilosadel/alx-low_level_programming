@@ -3,12 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - chesk the code 
+ * main - chesk the code
  * @argc: the number of argc
  * @argv: argument vector
  *
- * return: always 0
- *
+ * Return: 0 on success
  */
 
 int main(int argc, char **argv)
