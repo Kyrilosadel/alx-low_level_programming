@@ -1,24 +1,12 @@
 #include "main.h"
 
 /**
- * _putchar - Writes a character to th
+ * _putchar - Writes a character to the standard output
  * @c: The character to be written
  *
- * Return: On sucs returned.
+ * Return: On success 1. On error, -1 is returned.
  */
 int _putchar(char c);
-
-/**
- * _strlen_recursion - Returns thering.
- * @s: The strisure.
- * Return: The length of the string.
- */
-int _strlen_recursion(char *s)
-{
- if (*s == '\0')
-return 0;
-return 1 + _strlen_recursion(s + 1);
-}
 
 /**
  * _print_rev_recursion - Prints a string in reverse.
@@ -27,7 +15,7 @@ return 1 + _strlen_recursion(s + 1);
 void _print_rev_recursion(char *s)
 {
 if (*s == '\0')
- return;
- _print_rev_recursion(s + 1);
- _putchar(*s);
+return;
+_print_rev_recursion(s + 1);
+_putchar(*s);
 }
