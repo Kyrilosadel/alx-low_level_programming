@@ -3,34 +3,36 @@
 #include "main.h"
 
 /**
- * my_strdup - Duplicates a string to a new memory location
- * @src: Source string
+ * _strdup - Duplicates a string to a new memory location
+ * @str: Source string
  *
  * Return: Pointer to the duplicated string or NULL if allocation fails
  */
-char *my_strdup(char *src)
+char *_strdup(char *str)
 {
-char *dest;
-int i, len = 0;
+	char *duplicate;
+	int i, length = 0;
 
-if (src == NULL)
-return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-i = 0;
-while (src[i] != '\0')
-{
-len++;
-i++;
-}
+	i = 0;
+	while (str[i] != '\0')
+	{
+		length++;
+		i++;
+	}
 
-dest = malloc(sizeof(char) * (len + 1));
+	duplicate = malloc(sizeof(char) * (length + 1));
 
-if (dest == NULL)
-return (NULL);
+	if (duplicate == NULL)
+		return (NULL);
 
-for (i = 0; src[i]; i++)
-dest[i] = src[i];
+	for (i = 0; str[i]; i++)
+	{
+		duplicate[i] = str[i];
+	}
 
-return (dest);
+	return (duplicate);
 }
 
