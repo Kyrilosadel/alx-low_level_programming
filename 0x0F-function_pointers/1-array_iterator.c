@@ -13,5 +13,5 @@ int *ned = array + size - 1;
 
 if (array && size && action)
 while (array <= ned)
-action (*array++);
+action(*array++);
 }
